@@ -41,13 +41,116 @@
 }
 
 .subtitulo{
-   margin-left: 16em;
+   font-size: 3em;
+   margin-left: 4.5em;
 }
 
 .titulo{
-    margin-left: 6em;
+    font-size: 3.5em;
+    margin-left: 4.5em;
+}
+
+.text-h5{
+    font-size: 2.5em;
 }
 
 .formulario {
     margin-left: 5em;
+}
+
+.text-form {
+    font-size: 1em;
+}
+
+.input-form{
+    font-size: 1em;
+    border-radius: 2em;
+    border:.2em groove #000;
+    background: #aaa;
+   
+}
+
+.input-form:hover{
+
+    border-color: #f02;
+}
+
+.buttom-form{
+    font-size: 1em;
+    padding: .6em 7em;
+    border-radius:2em;
+    border-color: #000;
+    background: #f02;
+    
+}
+.buttom-form:hover{
+    background-color: #000;
+}
+.p-input{
+    font-size: 1.5em;
+
+}
+.input-check{
+    border-color: #000;
+}
+.input-check:hover{
+    border-color: #f02;
+}
+
+
+.div-descuento{
+    background-image: url(imgDescuento2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 400px;
+    margin-left: 2.5em;
+    border-radius: 2em;
+}
+
+.form-descuento{
+    margin-left: 4em;
+}
+
+.button-descuento{
+    font-size: 1em;
+    margin-left: 7em;
+    padding: .4em 2em;
+    border-radius:2em;
+    border-color: #000;
+    background: #f02;
+}
+.input-descuento{
+    font-size: 1em;
+    border-radius: 2em;
+    border:.2em groove #000;
+    background: #fff;
+
+}
+
+.container-redes{
+    margin-left: 5em;
+}
+
+.text-h5{
+    font-size: 1.5em;
+}
+
+
+.iconos-redes{
+   
+    font-size: 1.5em;
+    color: #fff;
+    margin: 1em 2em;
+
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.iconos-redes:hover{
+    font-size: 2em;
+   
 }

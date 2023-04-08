@@ -75,38 +75,71 @@
 
         <div class="container-fluid bg-black">
             <div class="row justify-content-center align-items-center">
-                    <h5 class="text-white d-flex flex-column justify-content-center align-items-center"> ¡Encontrá el outfit perfecto para vos! </h5>
+                    <h5 class="text-white d-flex flex-column justify-content-center align-items-center text-h5"> ¡Encontrá el outfit perfecto para vos! </h5>
             </div>
         </div>
-        <form class="col-md-6 mt-5 formulario">
+
+        <br>
+
+        <p class="text-center p-input"><b>Registrate</b> y accede a todas las <b>novedades</b> y códigos de <b>descuentos</b> EXCLUSIVOS.</p>
+
+      <div class="row">
+         <form class="col-md-4 mt-5 d-flex flex-column justify-content-center align-items formulario">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Ingresá tu email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="exampleInputEmail1" class="form-label text-form">Ingresá tu email</label>
+              <input type="email" required class="form-control input-form" id="exampleInputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Contaseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label for="exampleInputPassword1" class="form-label text-form">Contaseña</label>
+              <input type="password" required class="form-control input-form" id="exampleInputPassword1">
             </div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones.</label>
+              <input type="checkbox" class="form-check-input input-check" id="exampleCheck1">
+              <label class="form-check-label text-form" for="exampleCheck1">Acepto términos y condiciones.</label>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary buttom-form">Crear usuario</button>
+         </form>
+
+         
+
+         <div class="col-md-6 mt-5 d-flex flex-column justify-content-center align-items div-descuento">
+          <form class="form-descuento">
+            <label><b>Valor de tu producto:</b> <input type="number" class="input-descuento"/></label><br><br>
+            <label><b>Código de descuento:</b> <input type="number" class="input-descuento"/></label><br><br>
+            <button class="button-descuento"><b>Calcular precio</b></button><br><br>
+            <label><b>Valor final del producto:</b> <input type="number" class="input-descuento"/></label>
           </form>
+         </div>
+
+        </div>
+      </main>
+
+        <br>
+       <footer>
+        <div class="container-fluid bg-black">
+          <div class="row container text-center p-3 container-redes">
+                  <h5 class="text-white d-flex flex-column justify-content-center align-items-center mt-3 text-h5"> Seguinos en </h5>
+                  <div class="col-md-4"> 
+                    <div class="iconos-redes"><a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="iconos-redes"><a href="https://bi-instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="iconos-redes"><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></div>
+                  </div>
+                  <hr class="text-white">
+                  <h6 class="my-2 text-center term1">@copyright todos los derechos reservados</h6>
+            </div>
+        </div>
+      
+      </footer>
 
 
 
 
-
-
-
-
-
-
-
-    </main>
-
+   
 
 
 
