@@ -4,6 +4,50 @@
     box-sizing: border-box;
 }
 
-.body {
+.container-fluid{
     background: #000;
+}
+
+
+.nav-link{
+    color: #fff;
+
+}
+
+.container-fluid-img{
+    background-image: url(temporadaOtoInv.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: #f02;
+   
+}
+
+.iconos {
+   font-size: 2em;
+}
+
+.boton{
+    font-size: 1em;
+    padding: .6em 5em;
+    border-radius:2em;
+    background: #f02;
+    margin-left: 16em;
+}
+
+.subtitulo{
+   margin-left: 16em;
+}
+
+.titulo{
+    margin-left: 6em;
+}
+
+.formulario {
+    margin-left: 5em;
 }
