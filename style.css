@@ -14,6 +14,10 @@
 
 }
 
+.img-fluid{
+        width: fit-content;
+        height: 50px;  
+}
 .container-fluid-img{
     background-image: url(temporadaOtoInv.jpg);
     background-position: center;
@@ -37,17 +41,17 @@
     padding: .6em 5em;
     border-radius:2em;
     background: #f02;
-    margin-left: 16em;
+   
 }
 
 .subtitulo{
    font-size: 3em;
-   margin-left: 4.5em;
+   
 }
 
 .titulo{
     font-size: 3.5em;
-    margin-left: 4.5em;
+   
 }
 
 .text-h5{
@@ -55,7 +59,7 @@
 }
 
 .formulario {
-    margin-left: 5em;
+    
 }
 
 .text-form {
@@ -104,8 +108,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
-    height: 400px;
-    margin-left: 2.5em;
+    height: 25em;
     border-radius: 2em;
 }
 
@@ -115,7 +118,7 @@
 
 .button-descuento{
     font-size: 1em;
-    margin-left: 7em;
+    
     padding: .4em 2em;
     border-radius:2em;
     border-color: #000;
@@ -130,7 +133,7 @@
 }
 
 .container-redes{
-    margin-left: 5em;
+    
 }
 
 .text-h5{

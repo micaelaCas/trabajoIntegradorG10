@@ -37,9 +37,13 @@
     </header>
 
     <main>
+    
         <div class="container-fluid-img d-flex flex-column justify-content-center align-items-center">
-              <h2 class="text-center subtitulo">nueva colección</h2> <br> <br>
-              <h1 class="text-center titulo">OTOÑO <br> INVIERNO</h1> <br>
+
+              <a href="#descuento">Quiero mi descuento</a>
+        
+              <h2 class="text-center mx-auto d-block subtitulo">nueva colección</h2> <br> <br>
+              <h1 class="text-center mx-auto d-block titulo">OTOÑO <br> INVIERNO</h1> <br>
               <a class="btn btn-danger btn-rounded mt-3 boton">Ver</a>
             </div>
           </div>
@@ -83,8 +87,10 @@
 
         <p class="text-center p-input"><b>Registrate</b> y accede a todas las <b>novedades</b> y códigos de <b>descuentos</b> EXCLUSIVOS.</p>
 
-      <div class="row">
-         <form class="col-md-4 mt-5 d-flex flex-column justify-content-center align-items formulario">
+      
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+           <form class="mt-5 d-flex flex-column justify-content-center align-items formulario">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label text-form">Ingresá tu email</label>
               <input type="email" required class="form-control input-form" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -99,26 +105,42 @@
               <label class="form-check-label text-form" for="exampleCheck1">Acepto términos y condiciones.</label>
             </div>
             <button type="submit" class="btn btn-primary buttom-form">Crear usuario</button>
-         </form>
+           </form>
+          </div>
+        </div>
+
+         <br>
+         <br>
+
+         <h6 id="descuento" class="text-center h6-input-descuento">Calculá el valor del producto con tu código de descuento ACÁ:</h6>
+
+        <div class="row">
+         <div class="container-fluid col-md-6 offset-md-3 mt-3 d-flex flex-column justify-content-center align-items div-descuento">
+
+           <form id="formulario" class="d-flex flex-column justify-content-center align-items">
+             <label for="precio">Precio original:</label>
+             <input type="number" id="precio" name="precio" class="input-descuento"><br><br>
+            
+             <label for="descuento">Código de descuento:</label>
+             <input type="number" id="descuento" name="descuento" class="input-descuento"><br><br>
+            
+             <input type="submit" value="Calcular descuento" class="button-descuento">
+           </form>
+          
+           <div id="resultado"></div>
 
          
-
-         <div class="col-md-6 mt-5 d-flex flex-column justify-content-center align-items div-descuento">
-          <form class="form-descuento">
-            <label><b>Valor de tu producto:</b> <input type="number" class="input-descuento"/></label><br><br>
-            <label><b>Código de descuento:</b> <input type="number" class="input-descuento"/></label><br><br>
-            <button class="button-descuento"><b>Calcular precio</b></button><br><br>
-            <label><b>Valor final del producto:</b> <input type="number" class="input-descuento"/></label>
-          </form>
          </div>
-
         </div>
+        
       </main>
 
         <br>
+        
        <footer>
         <div class="container-fluid bg-black">
-          <div class="row container text-center p-3 container-redes">
+           <div class="row 
+           text-center p-2 container-redes">
                   <h5 class="text-white d-flex flex-column justify-content-center align-items-center mt-3 text-h5"> Seguinos en </h5>
                   <div class="col-md-4"> 
                     <div class="iconos-redes"><a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></div>
