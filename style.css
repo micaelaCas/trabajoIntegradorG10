@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Prompt', sans-serif;
 }
 
 .container-fluid{
@@ -26,7 +27,19 @@
     width: 100%;
     height: 500px;
 }
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color:#fff;
+    border-radius: 3px;
 
+}
 .navbar-nav {
     --bs-nav-link-hover-color: #f02;
    
@@ -47,19 +60,16 @@
 .subtitulo{
    font-size: 3em;
    
+   
 }
 
 .titulo{
     font-size: 3.5em;
-   
+ 
 }
 
 .text-h5{
     font-size: 2.5em;
-}
-
-.formulario {
-    
 }
 
 .text-form {
@@ -103,13 +113,14 @@
 
 
 .div-descuento{
-    background-image: url(imgDescuento2.jpg);
+    background-color: #cfbb94;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
     height: 25em;
     border-radius: 2em;
+    
 }
 
 .form-descuento{
@@ -118,23 +129,19 @@
 
 .button-descuento{
     font-size: 1em;
-    
-    padding: .4em 2em;
+    padding: .6em 2em;
     border-radius:2em;
     border-color: #000;
     background: #f02;
 }
+
 .input-descuento{
-    font-size: 1em;
+    font-size: 1.3em; 
     border-radius: 2em;
     border:.2em groove #000;
     background: #fff;
 
-}
-
-.container-redes{
-    
-}
+}   
 
 .text-h5{
     font-size: 1.5em;
@@ -156,4 +163,18 @@ a {
 .iconos-redes:hover{
     font-size: 2em;
    
+}
+
+.div-mensaje{
+    width: 100px;
+    height: 100px;
+    background-color: #f02;
+    border-color: #000;
+}
+
+.mi-descuento{
+    color:#666
+}
+.mi-descuento:hover{
+    color: #f02;
 }

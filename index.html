@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,100;1,200;1,300;1,500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
@@ -16,6 +19,9 @@
               <a class="navbar-brand" href="#">
                 <img src="logoBoutique.png" class="img-fluid"  alt="" >
               </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
@@ -40,7 +46,7 @@
     
         <div class="container-fluid-img d-flex flex-column justify-content-center align-items-center">
 
-              <a href="#descuento">Quiero mi descuento</a>
+              <a href="#descuento" class="mi-descuento">Quiero mi descuento</a>
         
               <h2 class="text-center mx-auto d-block subtitulo">nueva colección</h2> <br> <br>
               <h1 class="text-center mx-auto d-block titulo">OTOÑO <br> INVIERNO</h1> <br>
@@ -112,22 +118,27 @@
          <br>
          <br>
 
-         <h6 id="descuento" class="text-center h6-input-descuento">Calculá el valor del producto con tu código de descuento ACÁ:</h6>
+         <h6 id="descuento" class="text-center h6-input-descuento">Descubrí cuanto descuento tiene tu código ACÁ:</h6>
 
         <div class="row">
          <div class="container-fluid col-md-6 offset-md-3 mt-3 d-flex flex-column justify-content-center align-items div-descuento">
 
            <form id="formulario" class="d-flex flex-column justify-content-center align-items">
-             <label for="precio">Precio original:</label>
-             <input type="number" id="precio" name="precio" class="input-descuento"><br><br>
+
+            <label for="codigoDescuento">Código de descuento:</label>
+
+             <input type="text" id="codigo" class="input-descuento"><br><br>
             
-             <label for="descuento">Código de descuento:</label>
-             <input type="number" id="descuento" name="descuento" class="input-descuento"><br><br>
-            
-             <input type="submit" value="Calcular descuento" class="button-descuento">
-           </form>
+             <button id="submit" class="button-descuento">Ver</button><br>
+
+             <div id="resultado">Con tu código tenes 10% de descuento en cualquier producto de la tienda.</div>
+             <div id="resultado1">Con tu código tenes 20% de descuento en cualquier producto de la tienda.</div>
+             <div id="resultado2">Con tu código tenes 30% de descuento en cualquier producto de la tienda.</div>
+             <div id="resultado3">El codigo ingresado es incorrecto.</div>
           
-           <div id="resultado"></div>
+
+           </form>
+         
 
          
          </div>
@@ -139,8 +150,7 @@
         
        <footer>
         <div class="container-fluid bg-black">
-           <div class="row 
-           text-center p-2 container-redes">
+           <div class="row text-center p-2 container-redes">
                   <h5 class="text-white d-flex flex-column justify-content-center align-items-center mt-3 text-h5"> Seguinos en </h5>
                   <div class="col-md-4"> 
                     <div class="iconos-redes"><a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></div>
@@ -157,6 +167,15 @@
         </div>
       
       </footer>
+      
+
+
+
+
+
+
+
+
 
 
 
@@ -171,6 +190,7 @@
 
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

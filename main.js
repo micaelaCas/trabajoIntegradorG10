@@ -1,14 +1,35 @@
-const formulario = document.getElementById("formulario");
-const resultado = document.getElementById("resultado");
+$("#resultado").hide();
+$("#resultado1").hide();
+$("#resultado2").hide();
+$("#resultado3").hide();
 
-formulario.addEventListener("submit", function(event) {
-  event.preventDefault();
-  
-  const precio = parseFloat(document.getElementById("precio").value);
-  const porcentajeDescuento = parseFloat(document.getElementById("descuento").value);
-  
-  const descuento = (100 - porcentajeDescuento) / 100 * precio;
-  const precioFinal = precio - descuento;
-  
-  resultado.innerText = `Precio final con descuento: $${precioFinal.toFixed(2)}`;
-});
+  $(document).ready(function(){
+
+  $("#submit").click(function(e){
+    e.preventDeFault();
+
+    let codigo=$("#codigo")[0].value;
+
+    if (codigo=="desc"){
+      $("#resultado").show();
+    }
+
+    else if (codigo=="desc1"){
+      $("#resultado1").show();
+    }
+
+    else if (codigo=="desc2"){
+      $("#resultado2").show();
+    }
+
+    else {
+      $("#resultado3").show();
+    }
+
+  })
+
+})
+
+      
+
+   
