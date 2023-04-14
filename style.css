@@ -123,6 +123,10 @@
     
 }
 
+.divpri {
+    background-color: #cfbb94;
+}
+
 .form-descuento{
     margin-left: 4em;
 }
@@ -177,4 +181,35 @@ a {
 }
 .mi-descuento:hover{
     color: #f02;
+}
+
+.warnings{
+    width: 10em;
+    text-align: center;
+    margin: auto;
+    color: #000;
+    padding-top: 1em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:800px){
+    .formulario,.p-input{
+        width: 50%;
+        margin: auto;
+    }
 }

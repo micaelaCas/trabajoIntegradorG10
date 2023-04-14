@@ -1,34 +1,38 @@
-$("#resultado").hide();
-$("#resultado1").hide();
-$("#resultado2").hide();
-$("#resultado3").hide();
+const codigo = document.getElementById("codigo")
+const form = document.getElementById("formulario")
+const parrafo = document.getElementById("warnings")
 
-  $(document).ready(function(){
+form.addEventListener("submit", e=>{
+  e.preventDefault()
+  let warnings = ""
+  parrafo.innerHTML= ""
 
-  $("#submit").click(function(e){
-    e.preventDeFault();
+  if(codigo.value == "desc"){
+    warnings += `Tu codigo tiene 10% de descuento para usar en cualquier producto de nuestra tienda`
+    ver=true
+  }
+  if(codigo.value == "desc1"){
+    warnings += `Tu codigo tiene 20% de descuento para usar en cualquier producto de nuestra tienda`
+    ver=true
+  }
 
-    let codigo=$("#codigo")[0].value;
+  if(codigo.value == "desc2"){
+    warnings += `Tu codigo tiene 30% de descuento para usar en cualquier producto de nuestra tienda`
+    ver=true
+  }
 
-    if (codigo=="desc"){
-      $("#resultado").show();
-    }
-
-    else if (codigo=="desc1"){
-      $("#resultado1").show();
-    }
-
-    else if (codigo=="desc2"){
-      $("#resultado2").show();
-    }
-
-    else {
-      $("#resultado3").show();
-    }
-
-  })
+  if(ver){
+    parrafo.innerHTML = warnings
+  }
+  
 
 })
+
+
+
+
+
+
 
       
 

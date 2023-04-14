@@ -95,22 +95,28 @@
 
       
         <div class="row">
-          <div class="col-md-6 offset-md-3">
-           <form class="mt-5 d-flex flex-column justify-content-center align-items formulario">
+          <div class="col-md-8 offset-md-2">
+
+           <form action="https://formspree.io/f/xeqwpvzq" method="post" class="mt-5 d-flex flex-column justify-content-center align-items formulario">
+
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label text-form">Ingresá tu email</label>
-              <input type="email" required class="form-control input-form" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input name="Email" type="email" required class="form-control input-form" id="exampleInputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
             </div>
+
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label text-form">Contaseña</label>
-              <input type="password" required class="form-control input-form" id="exampleInputPassword1">
+              <input name="Contraseña" type="password" required class="form-control input-form" id="exampleInputPassword1">
             </div>
+
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input input-check" id="exampleCheck1">
               <label class="form-check-label text-form" for="exampleCheck1">Acepto términos y condiciones.</label>
             </div>
+
             <button type="submit" class="btn btn-primary buttom-form">Crear usuario</button>
+
            </form>
           </div>
         </div>
@@ -120,24 +126,21 @@
 
          <h6 id="descuento" class="text-center h6-input-descuento">Descubrí cuanto descuento tiene tu código ACÁ:</h6>
 
-        <div class="row">
-         <div class="container-fluid col-md-6 offset-md-3 mt-3 d-flex flex-column justify-content-center align-items div-descuento">
+        <div class="container-fluid divpri">
+         <div class="container-fluid col-md-6 mt-3 d-flex flex-column justify-content-center align-items div-descuento">
 
-           <form id="formulario" class="d-flex flex-column justify-content-center align-items">
+          <form id="formulario" class="d-flex flex-column justify-content-center align-items">
 
             <label for="codigoDescuento">Código de descuento:</label>
 
              <input type="text" id="codigo" class="input-descuento"><br><br>
             
-             <button id="submit" class="button-descuento">Ver</button><br>
+             <button type="submit" class="button-descuento">Ver</button><br>
 
-             <div id="resultado">Con tu código tenes 10% de descuento en cualquier producto de la tienda.</div>
-             <div id="resultado1">Con tu código tenes 20% de descuento en cualquier producto de la tienda.</div>
-             <div id="resultado2">Con tu código tenes 30% de descuento en cualquier producto de la tienda.</div>
-             <div id="resultado3">El codigo ingresado es incorrecto.</div>
+             <p class="warnings" id="warnings"></p>
+            
           
-
-           </form>
+          </form>
          
 
          
