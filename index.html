@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="chicB.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,100;1,200;1,300;1,500&display=swap" rel="stylesheet">
@@ -12,33 +13,41 @@
     <link rel="stylesheet" href="style.css">
     <title>Chic Boutique</title>
 </head>
+
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
             <div class="container-fluid">
+
               <a class="navbar-brand" href="#">
                 <img src="logoBoutique.png" class="img-fluid"  alt="" >
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
               </button>
+
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Sobre Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Contacto</a>
-                  </li>
-                  <li class="nav-item d-flex align-items-center">
-                        <a class="btn btn-danger ms-4 btn-rounded" href=""><i class="bi bi-cart"></i></a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="">Contacto</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                      <a class="btn btn-danger ms-4 btn-rounded" href=""><i class="bi bi-cart"></i></a>
+                    </li>
                 </ul>
               </div>
+
             </div>
+
           </nav>
     </header>
 
@@ -49,13 +58,16 @@
               <a href="#descuento" class="mi-descuento">Quiero mi descuento</a>
         
               <h2 class="text-center mx-auto d-block subtitulo">nueva colección</h2> <br> <br>
+
               <h1 class="text-center mx-auto d-block titulo">OTOÑO <br> INVIERNO</h1> <br>
+
               <a class="btn btn-danger btn-rounded mt-3 boton">Ver</a>
-            </div>
           </div>
-        </div>
+          
+        
 
         <div class="container text-center py-5">
+
             <div class="row py-5">
 
                 <h4 class="text-danger">¡COMPRÁ ONLINE!</h4>
@@ -95,77 +107,86 @@
 
       
         <div class="row">
-          <div class="col-md-8 offset-md-2">
 
-           <form action="https://formspree.io/f/xeqwpvzq" method="post" class="mt-5 d-flex flex-column justify-content-center align-items formulario">
+           <div class="col-md-8 offset-md-2">
 
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label text-form">Ingresá tu email</label>
-              <input name="Email" type="email" required class="form-control input-form" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
-            </div>
+             <form action="https://formspree.io/f/xeqwpvzq" method="post" class="mt-5 d-flex flex-column justify-content-center align-items formulario">
 
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label text-form">Contaseña</label>
-              <input name="Contraseña" type="password" required class="form-control input-form" id="exampleInputPassword1">
-            </div>
+               <div class="mb-3">
+                 <label for="exampleInputEmail1" class="form-label text-form">Ingresá tu email</label>
+                 <input name="Email" type="email" required class="form-control input-form" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+               </div>
 
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input input-check" id="exampleCheck1">
-              <label class="form-check-label text-form" for="exampleCheck1">Acepto términos y condiciones.</label>
-            </div>
+               <div class="mb-3">
+                 <label for="exampleInputPassword1" class="form-label text-form">Contaseña</label>
+                 <input name="Contraseña" type="password" required class="form-control input-form" id="exampleInputPassword1">
+               </div>
 
-            <button type="submit" class="btn btn-primary buttom-form">Crear usuario</button>
+               <div class="mb-3 form-check">
+                 <input type="checkbox" class="form-check-input input-check" id="exampleCheck1">
+                 <label class="form-check-label text-form" for="exampleCheck1">Acepto términos y condiciones.</label>
+               </div>
 
-           </form>
-          </div>
+               <button type="submit" class="btn btn-primary buttom-form">Crear usuario</button>
+
+              </form>
+
+           </div>
+
         </div>
 
          <br>
          <br>
 
-         <h6 id="descuento" class="text-center h6-input-descuento">Descubrí cuanto descuento tiene tu código ACÁ:</h6>
+         <h6 id="descuento" class="text-center h6-input-descuento"><b>Descubrí cuánto descuento tiene tu código ACÁ:</b></h6>
 
         <div class="container-fluid divpri">
-         <div class="container-fluid col-md-6 mt-3 d-flex flex-column justify-content-center align-items div-descuento">
 
-          <form id="formulario" class="d-flex flex-column justify-content-center align-items">
+           <div class="container-fluid col-md-6 mt-3 d-flex flex-column justify-content-center align-items div-descuento">
 
-            <label for="codigoDescuento">Código de descuento:</label>
+              <form id="formulario" class="d-flex flex-column justify-content-center align-items">
 
-             <input type="text" id="codigo" class="input-descuento"><br><br>
+                 <label for="codigoDescuento">Código de descuento:</label>
+                 <input type="text" id="codigo" class="input-descuento"><br><br>
             
-             <button type="submit" class="button-descuento">Ver</button><br>
+                 <button type="submit" class="button-descuento">Ver</button><br>
 
-             <p class="warnings" id="warnings"></p>
+                 <p class="warnings" id="warnings"></p>
             
-          
-          </form>
+              </form>
          
+           </div>
 
-         
-         </div>
         </div>
         
       </main>
 
-        <br>
+         <br>
         
-       <footer>
+      <footer>
+
         <div class="container-fluid bg-black">
-           <div class="row text-center p-2 container-redes">
-                  <h5 class="text-white d-flex flex-column justify-content-center align-items-center mt-3 text-h5"> Seguinos en </h5>
-                  <div class="col-md-4"> 
-                    <div class="iconos-redes"><a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="iconos-redes"><a href="https://bi-instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="iconos-redes"><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></div>
-                  </div>
+
+            <div class="row text-center p-2 container-redes">
+
+                 <h5 class="text-white d-flex flex-column justify-content-center align-items-center mt-3 text-h5"> Seguinos en </h5>
+
+                 <div class="col-md-4"> 
+                   <div class="iconos-redes"><a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></div>
+                 </div>
+
+                 <div class="col-md-4">
+                     <div class="iconos-redes"><a href="https://bi-instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></div>
+                 </div>
+
+                 <div class="col-md-4">
+                     <div class="iconos-redes"><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></div>
+                 </div>
+
                   <hr class="text-white">
-                  <h6 class="my-2 text-center term1">@copyright todos los derechos reservados</h6>
+
+                  <h6 class="my-2 text-center term1">@copyright 2023 todos los derechos reservados Chic Boutique</h6>
             </div>
         </div>
       
@@ -193,7 +214,7 @@
 
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="main.js"></script>
 </body>
 </html>
