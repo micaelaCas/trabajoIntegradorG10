@@ -15,8 +15,8 @@
 }
 
 .img-fluid{
-        width: fit-content;
-        height: 50px;  
+    width: fit-content;
+    height: 3.5em;  
 }
 
 .container-fluid-img{
@@ -25,7 +25,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 500px;
+    height: 50em;
 }
 
 .navbar-toggler-icon {
@@ -38,7 +38,7 @@
     background-position: center;
     background-size: 100%;
     background-color:#fff;
-    border-radius: 3px;
+    border-radius: .2em;
 }
 
 .navbar-nav {
@@ -108,7 +108,7 @@
 }
 
 .div-descuento{
-    background-color: #cfbb94;
+    background-color: #CD3228;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@
 }
 
 .divpri {
-    background-color: #cfbb94;
+    background-color: #CD3228;
 }
 
 .form-descuento{
@@ -126,11 +126,18 @@
 }
 
 .button-descuento{
+    color: #fff;
     font-size: 1em;
     padding: .6em 2em;
     border-radius:2em;
+    border-color: #fff;
+    background: #000;
+}
+
+.button-descuento:hover{
+    color: #000;
     border-color: #000;
-    background: #f02;
+    background: #fff;
 }
 
 .input-descuento{
@@ -139,6 +146,11 @@
     border:.2em groove #000;
     background: #fff;
 }   
+
+.input-descuento:hover{
+    border:.2em groove #fff;
+    
+}
 
 .text-h5{
     font-size: 1.5em;
@@ -159,19 +171,16 @@ a {
     font-size: 2em;
 }
 
-.div-mensaje{
-    width: 100px;
-    height: 100px;
-    background-color: #f02;
-    border-color: #000;
-}
-
 .h6-input-descuento{
     font-size: 1.3em;
 }
 
 .mi-descuento{
-    color:#666
+    padding: .6em;
+    background-color: #000;
+    color:#fff;
+    border-radius: .5em;
+    margin-bottom: 5em;
 }
 
 .mi-descuento:hover{
@@ -186,6 +195,59 @@ a {
     padding-top: 1em;
 
 }
+
+.container-fluid-imgSobreNos{
+    background-image: url(imgSobreNos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50em;
+    font-family: 'Aclonica', sans-serif;
+   
+}
+
+.subtitulo-sobreNos{
+    font-size: 3em;
+    color: #fff;
+   
+ }
+ 
+ .titulo-sobreNos{
+     font-size: 5em;
+     color: #f02;
+     margin-bottom: 1em;
+ }
+
+.productos img{
+    width: 100%;
+    height: 17em;
+}
+
+.img-productos{
+    padding: 1.5em;
+}
+
+.productos img:hover{
+    border: .3em solid #f7f7f7;
+}
+
+.boton-productos{
+    font-size: 1em;
+    padding: .5em 4em;
+    border-radius:2em;
+    background: #f02;
+    margin-left: 5.6em;
+}
+
+.iconos-contacto{
+    font-size: 4em;
+}
+
+
+
+
+
 
 
 
